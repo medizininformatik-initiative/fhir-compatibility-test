@@ -1,0 +1,13 @@
+services:
+    mii-compatiblity-test:
+        build: .
+        environment:
+            - FHIR_BASE_URL=${MII_REPORT_CLIENT_FHIR_BASE_URL}
+            - FHIR_USER=${MII_REPORT_CLIENT_FHIR_USER}
+            - FHIR_PW=${MII_REPORT_CLIENT_FHIR_PW}
+            - FHIR_PROXY_HTTP=${MII_REPORT_CLIENT_FHIR_PROXY_HTTP}
+            - FHIR_PROXY_HTTPS=${MII_REPORT_CLIENT_FHIR_PROXY_HTTPS}
+            - FHIR_TOKEN=${MII_REPORT_CLIENT_FHIR_TOKEN}
+        volumes:
+            - ./report-queries.json:/opt/reportclient/report-queries.json
+            - ./reports:/opt/reportclient/reports

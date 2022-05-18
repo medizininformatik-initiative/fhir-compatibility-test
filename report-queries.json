@@ -1,0 +1,35 @@
+{
+  "siteName": "my-site-name",
+  "datetime": "",
+  "capabilityStatement": {
+    "software": {},
+    "searchParams": []
+  },
+  "compatibilityQueries":[
+    { 
+      "name": "Observation basic check",
+      "query": "/Observation?_count=1",
+      "refsToCheck":[
+        "subject.reference",
+        "encounter.reference"
+      ]
+    },
+    { 
+      "name": "Observation hemoglobin (common observation)",
+      "query": "/Observation?code=718-7",
+      "refsToCheck":[
+        "subject.reference",
+        "encounter.reference"
+      ]
+    },
+    {
+      "name": "Medication Administration basic check",
+      "query": "/MedicationAdministration?_count=1",
+      "refsToCheck":[
+        "medicationReference.reference",
+        "subject.reference",
+        "context.reference"
+      ]
+    }
+  ]
+}
