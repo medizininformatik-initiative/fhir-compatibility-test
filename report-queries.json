@@ -30,6 +30,13 @@
         "subject.reference",
         "context.reference"
       ]
+    },
+    {
+      "name": "Consent check",
+      "query": "/Consent",
+      "refsToCheck":[
+        "subject.reference"
+      ]
     }
   ]
 }

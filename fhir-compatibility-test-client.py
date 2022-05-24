@@ -103,6 +103,14 @@ def references_correct(resp_json, refsToCheck):
 
     return True
 
+def get_count_for_query(query):
+    
+    if '?' not in query:
+        resp = execute_query(f'{query}?_summary=count')
+    else:
+        resp = execute_query(f'{query}&_summary=count')
+
+    return resp['json']['total']
 
 def execute_compatibility_queries(compatibility_queries):
 
@@ -112,10 +120,12 @@ def execute_compatibility_queries(compatibility_queries):
 
         if resp['status'] != "failed":
             query['timeSeconds'] = resp['timeSeconds']
-            query['response'] = resp['json']['total']
             query['referencesCorrect'] = True
+
             if not references_correct(resp['json'], query['refsToCheck']):
                 query['referencesCorrect'] = False
+
+            query['nResourcesFound'] = get_count_for_query(query["query"])
 
 
 def execute_capability_statement(capabilityStatement):
