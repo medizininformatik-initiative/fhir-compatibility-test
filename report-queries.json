@@ -59,8 +59,8 @@
     }
     ,
     {
-      "name": "Condition basic check mild asthma",
-      "query": "/Condition?code=http://snomed.info/sct|370218001&_count=1",
+      "name": "Condition basic check benign essential hypertension",
+      "query": "/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|I10.00",
       "refsToCheck": [
         "subject.reference"
       ]
