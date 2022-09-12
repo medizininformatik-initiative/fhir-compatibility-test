@@ -5,38 +5,90 @@
     "software": {},
     "searchParams": []
   },
-  "compatibilityQueries":[
-    { 
-      "name": "Observation basic check",
-      "query": "/Observation?_count=1",
-      "refsToCheck":[
-        "subject.reference",
-        "encounter.reference"
-      ]
+  "compatibilityQueries": [
+    {
+      "name": "Patient basic check gender",
+      "query": "/Patient?gender=female&_count=1",
+      "refsToCheck": []
     },
-    { 
-      "name": "Observation hemoglobin (common observation)",
-      "query": "/Observation?code=718-7",
-      "refsToCheck":[
+    {
+      "name": "Observation basic check lipase",
+      "query": "/Observation?code=http://loinc.org|3040-3&value-quantity=gt0.0|http://unitsofmeasure.org|U/L&_count=1",
+      "refsToCheck": [
         "subject.reference",
         "encounter.reference"
       ]
     },
     {
-      "name": "Medication Administration basic check",
-      "query": "/MedicationAdministration?_count=1",
-      "refsToCheck":[
-        "medicationReference.reference",
+      "name": "Observation basic check hemoglobin",
+      "query": "/Observation?code=http://loinc.org|718-7&value-quantity=gt0.0|http://unitsofmeasure.org|g/dL&_count=1",
+      "refsToCheck": [
         "subject.reference",
-        "context.reference"
+        "encounter.reference"
       ]
     },
     {
-      "name": "Consent check",
-      "query": "/Consent",
-      "refsToCheck":[
+      "name": "Specimen basic check serum",
+      "query": "/Specimen?type=http://snomed.info/sct|119364003&status=available&_count=1",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "Specimen basic check spot urine sample",
+      "query": "/Specimen?type=http://snomed.info/sct|278020009&status=available&_count=1",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    }
+    ,
+    {
+      "name": "Procedure basic check amputation upper arm",
+      "query": "/Procedure?code=http://fhir.de/CodeSystem/bfarm/ops|5-862.2&_count=1",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    }
+    ,
+    {
+      "name": "Procedure basic check positron emission tomography",
+      "query": "/Procedure?code=http://fhir.de/CodeSystem/bfarm/ops|3-74x&_count=1",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    }
+    ,
+    {
+      "name": "Condition basic check benign essential hypertension",
+      "query": "/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|I10.00",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    }
+    ,
+    {
+      "name": "Condition basic check secondary multiple osteoarthritis",
+      "query": "/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|M15.3&_count=1",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    }
+    ,
+    {
+      "name": "consent basic check health insurance data",
+      "query": "/Consent?mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.1|2.16.840.1.113883.3.1937.777.24.5.1.7$http://hl7.org/fhir/consent-provision-type|permit&_count=1",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    }
+    ,
+    {
+      "name": "consent basic check bio materials",
+      "query": "/Consent?mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.1|2.16.840.1.113883.3.1937.777.24.5.1.14$http://hl7.org/fhir/consent-provision-type|permit&_count=1",
+      "refsToCheck": [
         "subject.reference"
       ]
     }
   ]
 }
+
