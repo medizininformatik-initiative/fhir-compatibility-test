@@ -5,36 +5,1054 @@
     "software": {},
     "searchParams": []
   },
-  "compatibilityQueries":[
-    { 
-      "name": "Observation basic check",
-      "query": "/Observation?_count=1",
-      "refsToCheck":[
-        "subject.reference",
-        "encounter.reference"
-      ]
-    },
-    { 
-      "name": "Observation hemoglobin (common observation)",
-      "query": "/Observation?code=718-7",
-      "refsToCheck":[
-        "subject.reference",
-        "encounter.reference"
+  "compatibilityQueries": [
+    {
+      "name": "test g1q1",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71&_count=50",
+      "refsToCheck": [
+        "subject.reference"
       ]
     },
     {
-      "name": "Medication Administration basic check",
-      "query": "/MedicationAdministration?_count=1",
-      "refsToCheck":[
-        "medicationReference.reference",
-        "subject.reference",
-        "context.reference"
+      "name": "test g1q2",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
       ]
     },
     {
-      "name": "Consent check",
-      "query": "/Consent",
-      "refsToCheck":[
+      "name": "test g1q3",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.8&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q4",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.9&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q5",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.7&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q6",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.5&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q7",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.4&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q8",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q9",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q10",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g1q11",
+      "query": "/Condition?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Ficd-10-gm%7CC71.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q1",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q2",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.5&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q3",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.4&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q4",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q5",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q6",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q7",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q8",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q9",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q10",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.20&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g2q11",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C5-015.21&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q1",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q2",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q3",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q4",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q5",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q6",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52d&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q7",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52b&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q8",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q9",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-520&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q10",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-521&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q11",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q12",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-526&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q13",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q14",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52c&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q15",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q16",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q17",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.5&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q18",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q19",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.8&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q20",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.4&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q21",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.7&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q22",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q23",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-529.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q24",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528.7&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q25",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q26",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528.9&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q27",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528.8&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q28",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q29",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-528.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q30",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.4&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q31",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.5&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q32",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q33",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q34",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q35",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q36",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q37",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q38",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q39",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.b&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q40",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q41",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.a&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q42",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.d&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q43",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q44",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.c&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q45",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.9&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q46",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q47",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q48",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q49",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q50",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q51",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.7&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q52",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q53",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q54",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q55",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q56",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.8&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q57",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q58",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-527.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q59",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-520.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q60",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-520.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q61",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-520.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q62",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-521.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q63",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-521.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q64",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-521.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q65",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q66",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q67",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-526.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q68",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-526.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q69",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-526.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q70",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-526.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q71",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-526.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q72",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q73",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.5&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q74",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.4&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q75",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.7&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q76",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q77",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.6&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q78",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q79",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q80",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q81",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q82",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.4&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q83",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.3&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q84",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q85",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.2&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q86",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q87",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.y&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q88",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q89",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.60&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q90",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-524.61&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q91",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.b1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q92",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.b0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q93",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.31&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q94",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.30&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q95",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.a1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q96",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.a0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q97",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.d1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q98",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.d0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q99",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.61&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q100",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.60&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q101",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.c1&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q102",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.c0&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q103",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.91&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q104",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-522.90&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q105",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a.01&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q106",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a.00&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q107",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a.11&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q108",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-52a.10&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q109",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.42&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q110",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.41&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q111",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.40&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q112",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.01&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q113",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.00&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q114",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.11&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q115",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-523.10&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q116",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.01&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q117",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.02&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q118",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.00&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q119",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.0x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q120",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.20&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q121",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.21&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q122",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.11&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q123",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.12&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q124",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.10&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g3q125",
+      "query": "/Procedure?code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fops%7C8-525.1x&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g4q1",
+      "query": "/MedicationAdministration?medication.code=http%3A%2F%2Ffhir.de%2FCodeSystem%2Fbfarm%2Fatc%7CL01AX03&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g5q1",
+      "query": "/Observation?code=http%3A%2F%2Floinc.org%7C26515-7&value-quantity=lt50.0%7Chttp%3A%2F%2Funitsofmeasure.org%7C10*3%2FuL&_count=50",
+      "refsToCheck": [
+        "subject.reference"
+      ]
+    },
+    {
+      "name": "test g6q1",
+      "query": "/Specimen?type=http%3A%2F%2Fsnomed.info%2Fsct%7C119376003&bodysite=C71,C71.9,C72.8,C71.8&_count=50",
+      "refsToCheck": [
         "subject.reference"
       ]
     }

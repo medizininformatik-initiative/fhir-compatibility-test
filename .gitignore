@@ -1,2 +1,4 @@
 !reports/README.md
 reports/*.json
+convert-sq-to-test-queries.py
+symp-queries.json

@@ -87,6 +87,7 @@ def execute_query(query):
 
 def references_correct(resp_json, refsToCheck):
 
+
     for entry in resp_json['entry']:
         resource = entry['resource']
         for ref in refsToCheck:
@@ -121,11 +122,12 @@ def execute_compatibility_queries(compatibility_queries):
         if resp['status'] != "failed":
             query['timeSeconds'] = resp['timeSeconds']
             query['referencesCorrect'] = True
+            query['nResourcesFound'] = get_count_for_query(query["query"])
 
-            if not references_correct(resp['json'], query['refsToCheck']):
+            if query['nResourcesFound'] > 0 and not references_correct(resp['json'], query['refsToCheck']):
                 query['referencesCorrect'] = False
 
-            query['nResourcesFound'] = get_count_for_query(query["query"])
+            
 
 
 def execute_capability_statement(capabilityStatement):
