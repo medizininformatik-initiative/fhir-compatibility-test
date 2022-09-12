@@ -1,6 +1,6 @@
 services:
     mii-compatiblity-test:
-        build: .
+        image: ghcr.io/medizininformatik-initiative/mii-compatibility-test:0.0.1-symp-test-rc1
         environment:
             - FHIR_BASE_URL=${MII_REPORT_CLIENT_FHIR_BASE_URL}
             - FHIR_USER=${MII_REPORT_CLIENT_FHIR_USER}
