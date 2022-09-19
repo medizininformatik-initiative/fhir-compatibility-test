@@ -74,9 +74,9 @@ def execute_query(query):
 
     try:
         resp_object['json'] = resp.json()
-
-        if 'link' in resp_object['json'].keys() and not query_successful(query_url, resp_object['json']['link']):
-            resp_object['status'] = "failed"
+        if resp_object['json']["resourceType"] == "Bundle":
+            if 'link' in resp_object['json'].keys() and not query_successful(query_url, resp_object['json']['link']):
+                resp_object['status'] = "failed"
     except JSONDecodeError:
         resp_object['status'] = "failed"
 
@@ -86,7 +86,6 @@ def execute_query(query):
     return resp_object
 
 def references_correct(resp_json, refsToCheck):
-
 
     for entry in resp_json['entry']:
         resource = entry['resource']
@@ -126,8 +125,6 @@ def execute_compatibility_queries(compatibility_queries):
 
             if query['nResourcesFound'] > 0 and not references_correct(resp['json'], query['refsToCheck']):
                 query['referencesCorrect'] = False
-
-            
 
 
 def execute_capability_statement(capabilityStatement):
